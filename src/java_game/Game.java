@@ -3,26 +3,22 @@ package java_game;
 import javax.swing.*;
 import java.awt.*;
 
-public class Cool extends JFrame {
+public class Game extends JFrame {
 
-    private Cool() {
+    private Game() {
         JLabel statusbar = new JLabel();
         add(statusbar, BorderLayout.SOUTH);
-
-        String path = "src/resources/40x40/smile.png";
-        Image icon = new ImageIcon(path).getImage();
-
         add(new Board(statusbar, 40));
         setResizable(false);
-        pack();
-
+        pack(); //```11```
         setTitle("Minesweeper");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(() -> new Cool().setVisible(true));
+//        EventQueue.invokeLater(() -> new Cool().setVisible(true));
+        new Game().setVisible(true);
     }
 
 }
