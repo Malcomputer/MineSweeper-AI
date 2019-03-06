@@ -1,28 +1,17 @@
-package temp.other;
-/*
- * Automatic Minesweeper solver
- *
- * Copyright (c) 2014 Project Nayuki
- * All rights reserved. Contact Nayuki for licensing.
- * https://www.nayuki.io/page/automatic-minesweeper-solver
- */
+package AI.Robybot;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.util.Random;
 
-
-/* Main application class, containing the Minesweeper solver logic */
-
-public final class MinesweeperAutosolver {
-
+public class Robybot {
     private static Random random = new Random();
 
-    private static MinesweeperGame game;
+    private static Bot game;
 
     public static void main(String[] args) throws AWTException, InterruptedException {
         Thread.sleep(2000);
-        game = new MinesweeperGame(1000);
+        game = new Bot(1000);
 
         // Play until win
         for (int i = 1; ; i++) {
@@ -34,6 +23,7 @@ public final class MinesweeperAutosolver {
     }
 
     private static boolean solveGame() {
+
         game.clickSmiley();
         game.rereadCells();
 

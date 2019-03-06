@@ -1,4 +1,4 @@
-package temp;
+package AI.Robybot.utils;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -8,13 +8,12 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 
-public final class MyImage {
+public class GameIcons {
     public final int[] pixels;
     public final int width;
     public final int height;
 
-
-    public MyImage(BufferedImage image) {
+    public GameIcons(BufferedImage image) {
         width = image.getWidth();
         height = image.getHeight();
         pixels = new int[width * height];
@@ -38,13 +37,12 @@ public final class MyImage {
         }
     }
 
-
-    public MyImage(String filename) {
+    public GameIcons(String filename) {
         this(readFile("src/resources/auto/" + filename));
     }
 
 
-    public boolean equals(MyImage other, int offX, int offY) {
+    public boolean equals(GameIcons other, int offX, int offY) {
         if (other.width < width || other.height < height)
             throw new IllegalArgumentException();
         for (int y = 0; y < height; y++) {

@@ -1,28 +1,18 @@
-package temp.other;
-/*
- * Automatic Minesweeper solver
- *
- * Copyright (c) 2014 Project Nayuki
- * All rights reserved. Contact Nayuki for licensing.
- * https://www.nayuki.io/page/automatic-minesweeper-solver
- */
+package AI.example;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.util.Random;
 
-
-/* Main application class, containing the Minesweeper solver logic */
-
-public final class MinesweeperAutosolver {
+public final class Start {
 
     private static Random random = new Random();
 
-    private static MinesweeperGame game;
+    private static AI game;
 
     public static void main(String[] args) throws AWTException, InterruptedException {
         Thread.sleep(2000);
-        game = new MinesweeperGame(1000);
+        game = new AI(1000);
 
         // Play until win
         for (int i = 1; ; i++) {

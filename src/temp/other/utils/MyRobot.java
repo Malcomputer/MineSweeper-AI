@@ -1,4 +1,4 @@
-package temp;
+package temp.other.utils;
 
 import java.awt.*;
 
@@ -17,7 +17,6 @@ public final class MyRobot {
     public MyImage getScreenshot(Rectangle rect) {
         return new MyImage(robot.createScreenCapture(rect));
     }
-
 
     public void click(int x, int y, int button) {
         if (lastMouseLocation != null && !MouseInfo.getPointerInfo().getLocation().equals(lastMouseLocation)) {

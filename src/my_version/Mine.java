@@ -1,4 +1,4 @@
-package Something;
+package my_version;
 
 import javax.swing.*;
 import java.awt.*;

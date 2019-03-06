@@ -1,4 +1,4 @@
-package Something;
+package my_version;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +11,7 @@ import static utils.Cell.*;
 public class MinePanel extends JPanel {
 
     private final int NUM_IMAGES = 13;
-    private final int NUM_MINES = 40;
+    private final int NUM_MINES = 7;
     private final int panel_size;
     private int ROWS_COLS = 16;
     private int allCells;
