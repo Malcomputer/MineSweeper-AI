@@ -1,4 +1,4 @@
-package AI.Robybot.utils;
+package AI.Custom.utils;
 
 public class Images {
     public static GameIcons[] SMILEY_IMAGES = {

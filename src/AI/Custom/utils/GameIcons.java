@@ -1,4 +1,4 @@
-package AI.Robybot.utils;
+package AI.Custom.utils;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;

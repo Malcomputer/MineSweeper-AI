@@ -1,5 +1,7 @@
 package AI.Robybot.utils;
 
+import temp.TempRun;
+
 import java.awt.*;
 
 public class Mybot {
@@ -20,7 +22,7 @@ public class Mybot {
 
     public void click(int x, int y, int button) {
         if (lastMouseLocation != null && !MouseInfo.getPointerInfo().getLocation().equals(lastMouseLocation)) {
-            System.err.println("Mouse moved. Program aborted");
+            System.err.println("Mouse moved. Program aborted\n" + TempRun.wins + " Wins - " + TempRun.loses + " loses");
             System.exit(1);
             return;
         }

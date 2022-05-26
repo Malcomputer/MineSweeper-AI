@@ -1,16 +1,16 @@
-package AI.example.utils;
+package AI.Custom.utils;
 
 import temp.TempRun;
 
 import java.awt.*;
 
-public final class MyRobot {
-    private java.awt.Robot robot;
+public class Mybot {
+    private Robot robot;
     private int delay;  // Milliseconds
     private Point lastMouseLocation;
 
-    public MyRobot(int delay) throws AWTException {
-        robot = new java.awt.Robot();
+    public Mybot(int delay) throws AWTException {
+        robot = new Robot();
         robot.setAutoWaitForIdle(true);
         lastMouseLocation = null;
         this.delay = delay;

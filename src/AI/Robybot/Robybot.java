@@ -37,10 +37,13 @@ public class Robybot {
 
             game.clickCell(x, y, InputEvent.BUTTON1_DOWN_MASK);  // Left click
             game.rereadSmiley();
-            if (game.smileyState == 1)  // Frown
+            if (game.smileyState == 1) {  // Frown
+                System.out.println("Lost game");
                 return false;
-            else if (game.smileyState == 2)  // Sunglasses
+            } else if (game.smileyState == 2) {  // Sunglasses
+                System.out.println("Won game");
                 return true;
+            }
             game.rereadCells();
 
             // Try to make deterministic safe moves
